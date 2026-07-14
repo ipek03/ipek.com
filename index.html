@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Ipek Unluakin — Software Engineer</title>
+  <meta name="description" content="Ipek Unluakin — Computer Science Engineer based in Istanbul." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>I</text></svg>" />
+</head>
+<body>
+
+
+<div class="mesh-bg">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+
+
+
+<nav class="navbar">
+  <div class="nav-brand">
+    <span class="nav-name">Ipek_Unluakin<span class="cursor">_</span></span>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    
+  </ul>
+  <div class="nav-controls">
+    <button id="lang-btn" class="nav-btn" onclick="toggleLang()">FR</button>
+  </div>
+</nav>
+
+
+<div class="slide-indicators" id="slide-indicators"></div>
+
+
+<main class="fullpage-wrapper" id="fullpage-wrapper">
+  
+  
+  <section class="slide" id="about">
+    <div class="slide-content">
+      <div class="hello-world-wrap">
+        <span class="hw-keyword">System</span>.<span class="hw-method">out</span>.<span class="hw-function">println</span>(<span class="hw-string">"Hello, World!"</span>);
+      </div>
+      <div class="hero-header-wrap">
+        <div class="profile-wrap">
+          <img src="assets/profile.jpg" alt="Ipek Unluakin" class="profile-pic" />
+        </div>
+        <div class="hero-titles">
+          <h1 class="hero-name">Ipek Unluakin</h1>
+          <h2 class="hero-role" id="hero-role"></h2>
+        </div>
+      </div>
+      <p class="hero-bio" id="about-text"></p>
+      <div class="social-links">
+        <a href="https://github.com/ipeku" target="_blank" class="social-link">GitHub ↗</a>
+        <a href="https://linkedin.com/in/ipekunluakin" target="_blank" class="social-link">LinkedIn ↗</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <div class="stat-val" id="stat-1-val"></div>
+          <div class="stat-label" id="stat-1-label"></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-val" id="stat-2-val"></div>
+          <div class="stat-label" id="stat-2-label"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide" id="experience">
+    <div class="slide-content">
+      <div class="section-header">
+        <span class="section-num">01.</span>
+        <h2 class="section-title" id="exp-title">Experience</h2>
+      </div>
+      <div class="scrollable-content">
+        <div class="timeline" id="timeline-exp"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide" id="education">
+    <div class="slide-content">
+      <div class="section-header">
+        <span class="section-num">02.</span>
+        <h2 class="section-title" id="edu-title">Education</h2>
+      </div>
+      <div class="scrollable-content">
+        <div class="timeline" id="timeline-edu"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide" id="projects">
+    <div class="slide-content">
+      <div class="section-header">
+        <span class="section-num">03.</span>
+        <h2 class="section-title" id="proj-title">Projects</h2>
+      </div>
+      <div class="scrollable-content">
+        <div class="grid-2" id="projects-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide" id="skills">
+    <div class="slide-content">
+      <div class="section-header">
+        <span class="section-num">04.</span>
+        <h2 class="section-title" id="skills-title">Skills</h2>
+      </div>
+      <div class="scrollable-content">
+        <div class="skills-grid-compact" id="skills-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide" id="achievements">
+    <div class="slide-content">
+      <div class="scrollable-content compact-split-view">
+        <div class="split-col">
+          <div class="section-header">
+            <span class="section-num">05.</span>
+            <h2 class="section-title" id="pub-title">Publications</h2>
+          </div>
+          <div class="compact-list" id="publications-list"></div>
+        </div>
+        <div class="split-col">
+          <div class="section-header">
+            <span class="section-num">06.</span>
+            <h2 class="section-title" id="cert-title">Certifications & Awards</h2>
+          </div>
+          <div class="compact-list" id="cert-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide" id="languages">
+    <div class="slide-content">
+      <div class="section-header">
+        <span class="section-num">07.</span>
+        <h2 class="section-title" id="lang-title">Languages</h2>
+      </div>
+      <div class="scrollable-content">
+        <div class="lang-grid" id="languages-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide" id="volunteer">
+    <div class="slide-content">
+      <div class="section-header">
+        <span class="section-num">08.</span>
+        <h2 class="section-title" id="vol-title">Volunteer</h2>
+      </div>
+      <div class="scrollable-content">
+        <div class="timeline" id="timeline-vol"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+</main>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>
