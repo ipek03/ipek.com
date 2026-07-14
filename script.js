@@ -493,9 +493,12 @@ function renderAll() {
   const volTitle = document.getElementById('vol-title');
   if(volTitle) volTitle.textContent = d.sections.vol;
 
-  
   document.getElementById('nav-links').innerHTML = d.nav.map(n => 
     `<li><a class="nav-link" href="#${n.id}" data-target="${n.id}">${n.label}</a></li>`
+  ).join('');
+
+  document.getElementById('mobile-nav-links').innerHTML = d.nav.map(n => 
+    `<li><a class="mobile-nav-link" href="#${n.id}" onclick="closeMobileMenu()">${n.label}</a></li>`
   ).join('');
 
   
@@ -622,4 +625,14 @@ function openProjectModal(index) {
 function closeModal(event) {
   if (event && event.target.id !== 'project-modal' && !event.target.classList.contains('modal-close')) return;
   document.getElementById('project-modal').classList.remove('active');
+}
+
+function toggleMobileMenu() {
+  document.getElementById('mobile-menu').classList.toggle('active');
+  document.getElementById('hamburger-btn').classList.toggle('active');
+}
+
+function closeMobileMenu() {
+  document.getElementById('mobile-menu').classList.remove('active');
+  document.getElementById('hamburger-btn').classList.remove('active');
 }
