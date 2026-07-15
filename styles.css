@@ -446,24 +446,44 @@ body {
 @media (max-width: 768px) {
   .hamburger { display: block; }
   .slide-indicators { display: none; }
-  .navbar { padding: 16px; }
+  .navbar { padding: 12px 20px; }
   .nav-links { display: none; }
   
-  /* Layout adjustments */
-  .slide { padding: 60px 16px 0; }
-  .hero-header-wrap { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
-  .hero-name { font-size: 2.2rem; }
-  .hero-role { font-size: 1.1rem; }
-  .hero-bio { text-align: center; font-size: 1rem; }
-  .social-links { justify-content: center; }
-  .hero-stats { flex-direction: column; gap: 24px; align-items: center; }
+  /* Disable scroll snapping and let content flow naturally on mobile */
+  .fullpage-wrapper { scroll-snap-type: none; }
+  .slide { height: auto; min-height: 100vh; padding: 100px 20px 60px; scroll-snap-align: none; }
+  .slide-content { max-height: none; }
+  .scrollable-content { overflow: visible; padding-right: 0; }
   
-  .compact-split-view { grid-template-columns: 1fr; }
+  /* Hero section adjustments */
+  .hero-header-wrap { flex-direction: column; align-items: center; text-align: center; gap: 16px; margin-bottom: 16px; }
+  .profile-pic { width: 110px; height: 110px; }
+  .hero-name { font-size: 2.2rem; line-height: 1.2; }
+  .hero-role { font-size: 1.1rem; margin-top: -4px; }
+  .hero-bio { text-align: center; font-size: 1rem; margin-bottom: 32px; }
+  .social-links { justify-content: center; margin-bottom: 32px; }
+  .hero-stats { flex-direction: row; justify-content: center; gap: 40px; }
+  .stat-val { font-size: 1.8rem; }
+  .stat-label { font-size: 0.75rem; }
+  
+  /* Section headers */
+  .section-header { margin-bottom: 24px; padding-bottom: 8px; }
+  .section-title { font-size: 1.5rem; }
+  
+  /* Grids and Lists */
+  .compact-split-view { grid-template-columns: 1fr; gap: 32px; }
   .grid-2 { grid-template-columns: 1fr; }
-  .projects-accordion-list { gap: 8px; }
+  .projects-accordion-list { gap: 12px; }
   .accordion-title { flex-direction: column; gap: 4px; }
+  
+  /* Timeline */
+  .timeline { gap: 24px; }
   .tl-item { flex-direction: column; align-items: flex-start; gap: 12px; }
   .tl-header { flex-direction: column; gap: 4px; align-items: flex-start; }
+  .tl-logo-wrap { width: 48px; height: 48px; }
   
+  /* Contact / Other */
   .contact-bento { padding: 24px; }
+  .lang-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .lang-item { padding: 16px; }
 }
