@@ -429,7 +429,6 @@ document.addEventListener('DOMContentLoaded', () => {
   restorePrefs();
   renderAll();
   initNativeSnapScroll(); 
-  document.getElementById('lang-btn').addEventListener('click', toggleLang);
 });
 
 function toggleLang() {

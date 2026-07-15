@@ -450,9 +450,10 @@ body {
   .nav-links { display: none; }
   
   /* Disable scroll snapping and let content flow naturally on mobile */
-  .fullpage-wrapper { scroll-snap-type: none; }
-  .slide { height: auto; min-height: 100vh; padding: 100px 20px 60px; scroll-snap-align: none; }
-  .slide-content { max-height: none; }
+  body { overflow: visible; height: auto; }
+  .fullpage-wrapper { scroll-snap-type: none; height: auto; overflow-y: visible; }
+  .slide { height: auto; min-height: auto; padding: 80px 20px 40px; scroll-snap-align: none; display: block; }
+  .slide-content { max-height: none; margin: 0 auto; }
   .scrollable-content { overflow: visible; padding-right: 0; }
   
   /* Hero section adjustments */
